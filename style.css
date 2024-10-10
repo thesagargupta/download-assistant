@@ -1,0 +1,180 @@
+/* Global Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Headings and Paragraphs */
+h1, h2, p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Container for all sections */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Ensures content doesn't stretch too wide */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Definition Box */
+.definition-box {
+    background-color: #2980b9; /* Darker blue background */
+    color: white;
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto; /* Centers this section */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Added shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.definition-box:hover {
+    transform: scale(1.02); /* Slightly grow on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+.definition-box h2 {
+    font-size: 1.8rem; /* Larger font for the title */
+    margin-bottom: 15px; /* Space below title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+.definition-box p {
+    font-size: 1.2rem; /* Slightly larger text for better readability */
+}
+
+/* First Section */
+.first {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #8062f9; /* Green background */
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 10px; /* Added border radius */
+    max-width: 600px;
+    margin: 20px auto; /* Centers this section */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.first:hover {
+    background-color: #27ae60; /* Darker green on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Shadow on hover */
+    transform: translateY(-2px); /* Slightly lift the box on hover */
+}
+
+/* Download Button */
+.second {
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px; /* Added border radius */
+}
+
+.second .btn {
+    background-color: #e74c3c; /* Red button */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px; /* Added border radius to button */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+}
+
+.second .btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+/* Info Box */
+.info-box, .project-box, .task-box {
+    background-color: #8a7dd3; /* Purple background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* Added border radius */
+    max-width: 800px;
+    margin: 20px auto; /* Centers this section */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Added shadow */
+    font-size: 1.2rem; /* Increased font size for readability */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.info-box:hover, .project-box:hover, .task-box:hover {
+    transform: translateY(-2px); /* Lift the box on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+/* Task and Requirements Sections */
+.tasks, .requirements {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ecf0f1; /* Light grey background for clarity */
+    border-radius: 10px; /* Added border radius */
+    max-width: 800px; /* Limit width for better readability */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+    text-align: left; /* Align text to the left for readability */
+    transition: box-shadow 0.3s ease;
+    overflow-wrap: break-word; /* Ensure long words break */
+    word-wrap: break-word; /* Compatibility for older browsers */
+}
+
+.tasks:hover, .requirements:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Fun Fact Box */
+.fun-fact {
+    background-color: #e67e22; /* Orange background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* Added border radius */
+    max-width: 800px;
+    margin: 20px auto; /* Centers this section */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Added shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fun-fact:hover {
+    transform: translateY(-2px); /* Lift the box on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+.fun-fact h1 {
+    color: white; /* White text for contrast */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px 20px; /* Adjust button padding for smaller screens */
+    }
+
+    .definition-box h2, .fun-fact h2, .fun-fact h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .project-box h2, .task-box h2 {
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+
+    .project-box p, .task-box p {
+        font-size: 1rem; /* Standard size for paragraph text */
+    }
+
+    .tasks ul, .requirements pre {
+        font-size: 0.9rem; /* Adjust size for better readability */
+    }
+}
